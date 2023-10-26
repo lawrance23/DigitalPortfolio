@@ -1,0 +1,266 @@
+/*CSS RESET*/
+*{
+margin:0px;
+padding:0px;
+}
+
+/*CSS VARIABLE*/
+
+:root{
+    --navbar-height:59px;
+}
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: BLACK;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.3;
+
+
+}
+/*navigation bar :logo and image*/
+#logo{
+    margin:2px 34px;
+
+
+}
+#logo img {
+    height: 53px;
+    margin: 3px 6px;
+}
+
+/*navigation bar: list style*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Hubballi', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.0rem;
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 45px 150px;
+    height: 355px;
+    justify-content: center;
+    align-items: center
+}
+#home::before{
+    content: "";
+    background: url('img11.jpg') center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 507px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Hubballi', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Hubballi', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+/*card-section*/
+#card_section{
+    
+    width: 100%;
+    height: 650px;
+    display: flex;
+
+}
+
+.cat{
+    padding: 20px;
+}
+.card {
+  margin: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 330px;
+  width: 25%;
+  text-align: center;
+  font-family: arial;
+
+
+}
+.card img{
+    height: 320px;
+}
+
+
+.card h1{
+    margin: 3px;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: white;
+
+}
+
+
+.price {
+  color: grey;
+  font-size: 17px;
+  background-color: white;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  margin: 3px;
+  padding: 7px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  height: 30%;
+  font-size: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+hr{
+    scrollbar-darkshadow-color: black;
+    height: 2px;
+    box-shadow: 5px black;
+}
+/*contact section*/
+
+#contact{
+    position: relative;
+ 
+}
+#contact h1{
+    color: white;
+ 
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:1.7 ;
+    background: url('bg2.png') no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    width: 100%;
+    height: 300px;
+    color: white;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    height: 10%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: ;
+
+}
+#contact-box form{
+    width: 40%;
+    height: 290px;
+}
+
+#contact-box label{
+    font-size: 15px;
+    font-family: 'Hubballi', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 6px 15px;
+}
+
+/*utitlity class*/
+.h-primary{
+    font-family: 'Hubballi', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    padding:22px ;
+}
+.h-secondary{
+    font-family: 'Hubballi', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    padding:22px ;
+    text-align: center;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid ghostwhite;
+    background-color: rgba(176, 140, 110, 0.64);
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
